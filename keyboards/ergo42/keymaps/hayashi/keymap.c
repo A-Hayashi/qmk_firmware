@@ -22,10 +22,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * `------------------------------------------------'   `------------------------------------------------'
    */
   [BASE] = LAYOUT( \
-    KC_TAB,   KC_Q,     KC_W,    KC_E,    KC_R,     KC_T,     _______,   KC_Y,   KC_U,      KC_I,    KC_O,   KC_P,    JP_AT,    JP_LBRC, \
-    KC_LCTL,  KC_A,     KC_S,    KC_D,    KC_F,     KC_G,     _______,   KC_H,   KC_J,      KC_K,    KC_L,   JP_SCLN, JP_COLN,  JP_RBRC, \
-    KC_LSFT,  KC_Z,     KC_X,    KC_C,    KC_V,     KC_B,     _______,   KC_N,   KC_M,      JP_COMM, JP_DOT, JP_SLSH, JP_BSLS,   _______, \
-    _______,  _______,  _______, _______, KC_LALT,  MO(META), KC_SPC,    KC_SPC, MO(SYMB),  _______, _______, _______, _______,  _______ \
+    KC_TAB,   KC_Q,     KC_W,    KC_E,    KC_R,     KC_T,     XXXXXXX,   KC_Y,   KC_U,      KC_I,    KC_O,   KC_P,    JP_AT,    JP_LBRC, \
+    KC_LCTL,  KC_A,     KC_S,    KC_D,    KC_F,     KC_G,     XXXXXXX,   KC_H,   KC_J,      KC_K,    KC_L,   JP_SCLN, JP_COLN,  JP_RBRC, \
+    KC_LSFT,  KC_Z,     KC_X,    KC_C,    KC_V,     KC_B,     XXXXXXX,   KC_N,   KC_M,      JP_COMM, JP_DOT, JP_SLSH, JP_BSLS,   XXXXXXX, \
+    XXXXXXX,  XXXXXXX,  XXXXXXX, XXXXXXX, KC_LALT,  MO(META), KC_SPC,    KC_SPC, MO(SYMB),  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX \
   ),
 
   /* META
@@ -40,10 +40,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * `------------------------------------------------'   `------------------------------------------------'
    */
   [META] = LAYOUT( \
-    KC_TAB,   _______,  _______,  KC_ESC,   KC_SPC,   JP_ZHTG,  _______,  KC_PGUP,  KC_HOME,  KC_UP,    KC_END,   _______,  JP_GRV,   JP_LCBR,   \
-    KC_LCTL,  _______,  _______,  KC_TAB,   KC_DEL,   KC_BSPC,  _______,  KC_PGDN,  KC_LEFT,  KC_DOWN,  KC_RGHT,  JP_ASTR,  JP_PLUS,  JP_RCBR,  \
-    KC_LSFT,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  JP_LT,    JP_GT,    JP_QUES,  JP_UNDS,  \
-    _______,  _______,  _______,  _______,  KC_LALT,  _______,  _______,  KC_ENT,   _______,  _______,  _______,  _______,  _______,  _______   \
+    _______,  XXXXXXX,  KC_ESC,   KC_SPC,   JP_ZHTG,  XXXXXXX,  XXXXXXX,  KC_PGUP,  KC_HOME,  KC_UP,    KC_END,   XXXXXXX,  JP_GRV,   JP_LCBR,   \
+    _______,  XXXXXXX,  KC_TAB,   KC_DEL,   KC_BSPC,  XXXXXXX,  XXXXXXX,  KC_PGDN,  KC_LEFT,  KC_DOWN,  KC_RGHT,  JP_ASTR,  JP_PLUS,  JP_RCBR,  \
+    _______,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  JP_LT,    JP_GT,    JP_QUES,  JP_UNDS,  \
+    XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_LALT,  XXXXXXX,  XXXXXXX,  KC_ENT,   XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX   \
   ),
 
   /* SYMB
@@ -58,10 +58,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * `------------------------------------------------'   `------------------------------------------------'
    */
   [SYMB] = LAYOUT( \
-    KC_TAB,   KC_1,     KC_2,     KC_3,     KC_4,     KC_5,     KC_6,     KC_7,     KC_8,     KC_9,     KC_0,     JP_MINS,  JP_CIRC,  JP_BSLS,   \
-    KC_LCTL,  JP_EXLM,  JP_DQT,   JP_HASH,  JP_DLR,   JP_PERC,  JP_AMPR,  JP_QUOT,  JP_LPRN,  JP_RPRN,  _______,  JP_EQL,   JP_TILD,  JP_PIPE,  \
-    KC_LSFT,  KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,   KC_F12,   _______,  \
-    _______,  _______,  _______,  _______,  KC_LALT,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______   \
+    _______,  KC_1,     KC_2,     KC_3,     KC_4,     KC_5,     KC_6,     KC_7,     KC_8,     KC_9,     KC_0,     JP_MINS,  JP_CIRC,  JP_BSLS,   \
+    _______,  JP_EXLM,  JP_DQT,   JP_HASH,  JP_DLR,   JP_PERC,  JP_AMPR,  JP_QUOT,  JP_LPRN,  JP_RPRN,  XXXXXXX,  JP_EQL,   JP_TILD,  JP_PIPE,  \
+    _______,  KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,   KC_F12,   XXXXXXX,  \
+    XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_LALT,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX   \
   )
 
 };
